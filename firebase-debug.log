@@ -19,3 +19,417 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\tanat\Desktop\code\producto
 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-01-16T17:57:29.771Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:29.771Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:29.773Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-01-16T17:57:30.856Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-01-16T17:57:30.857Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project producto-9c357 (Producto) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-01-16T17:57:31.647Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:31.647Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:31.647Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/producto-9c357/billingInfo [none]
+[debug] [2025-01-16T17:57:33.585Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/producto-9c357/billingInfo 200
+[debug] [2025-01-16T17:57:33.586Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/producto-9c357/billingInfo {"name":"projects/producto-9c357/billingInfo","projectId":"producto-9c357","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-01-16T17:57:33.588Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:33.588Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:33.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/sqladmin.googleapis.com [none]
+[debug] [2025-01-16T17:57:33.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/sqladmin.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:57:37.475Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/sqladmin.googleapis.com 200
+[debug] [2025-01-16T17:57:37.475Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] i  Skipping write of dataconnect\connector\connector.yaml 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory C:\Users\tanat\Desktop\code\producto 
+[info] i  Wrote new config to C:\Users\tanat\Desktop\code\producto\dataconnect\connector/connector.yaml 
+[info] I0116 19:57:45.440722   17136 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\tanat\\Desktop\\code\\producto\\dataconnect-generated\\js\\default-connector"
+I0116 19:57:45.442346   17136 generate.go:40] Generated all sources. Writing them to disk...
+I0116 19:57:45.443642   17136 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\tanat\\Desktop\\code\\producto\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.d.ts [264B] esm\index.esm.js [181B] esm\package.json [17B] index.cjs.js [222B] package.json [634B] 
+I0116 19:57:45.464872   17136 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/producto-9c357/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-01-16T17:57:48.666Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:48.666Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:48.666Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/firestore.googleapis.com [none]
+[debug] [2025-01-16T17:57:48.666Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/firestore.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:57:51.209Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/firestore.googleapis.com 200
+[debug] [2025-01-16T17:57:51.209Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/firestore.googleapis.com [omitted]
+[debug] [2025-01-16T17:57:51.210Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:51.210Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:51.210Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default) [none]
+[debug] [2025-01-16T17:57:53.275Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default) 200
+[debug] [2025-01-16T17:57:53.275Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default) {"name":"projects/producto-9c357/databases/(default)","uid":"d4176749-f8e9-4674-afcc-1ad1dc41317a","createTime":"2025-01-16T17:56:23.066698Z","updateTime":"2025-01-16T17:56:23.066698Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-01-16T17:56:23.066698Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IP2K/MTo+ooDMMrI+Zjo+ooD"}
+[debug] [2025-01-16T17:57:53.275Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-01-16T17:57:53.275Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-01-16T17:57:53.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-16T17:57:53.276Z] > authorizing via signed-in user (tanatswatavengwa@gmail.com)
+[debug] [2025-01-16T17:57:53.276Z] [iam] checking project producto-9c357 for permissions ["firebase.projects.get"]
+[debug] [2025-01-16T17:57:53.276Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:53.277Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:57:53.277Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions [none]
+[debug] [2025-01-16T17:57:53.277Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:57:53.277Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-16T17:57:55.262Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions 200
+[debug] [2025-01-16T17:57:55.262Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-01-16T17:58:06.051Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:06.051Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:06.051Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/producto-9c357/releases pageSize=10&pageToken=
+[debug] [2025-01-16T17:58:07.497Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/producto-9c357/releases 200
+[debug] [2025-01-16T17:58:07.497Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/producto-9c357/releases {"releases":[{"name":"projects/producto-9c357/releases/cloud.firestore","rulesetName":"projects/producto-9c357/rulesets/5b00e342-7c92-41aa-aa37-99a5df25509f","createTime":"2025-01-16T17:56:32.457626Z","updateTime":"2025-01-16T17:56:32.457626Z"}]}
+[debug] [2025-01-16T17:58:07.497Z] Found ruleset: projects/producto-9c357/rulesets/5b00e342-7c92-41aa-aa37-99a5df25509f
+[debug] [2025-01-16T17:58:07.498Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:07.498Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:07.498Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/producto-9c357/rulesets/5b00e342-7c92-41aa-aa37-99a5df25509f [none]
+[debug] [2025-01-16T17:58:07.927Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/producto-9c357/rulesets/5b00e342-7c92-41aa-aa37-99a5df25509f 200
+[debug] [2025-01-16T17:58:07.927Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/producto-9c357/rulesets/5b00e342-7c92-41aa-aa37-99a5df25509f [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-01-16T17:58:10.363Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:10.363Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:10.364Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:10.364Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:10.364Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-01-16T17:58:10.367Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-01-16T17:58:12.234Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-01-16T17:58:12.235Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-01-16T17:58:12.493Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-01-16T17:58:12.493Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/producto-9c357/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/producto-9c357/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-01-16T17:58:19.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-16T17:58:19.326Z] > authorizing via signed-in user (tanatswatavengwa@gmail.com)
+[debug] [2025-01-16T17:58:19.326Z] [iam] checking project producto-9c357 for permissions ["firebase.projects.get"]
+[debug] [2025-01-16T17:58:19.326Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:19.326Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:19.326Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions [none]
+[debug] [2025-01-16T17:58:19.326Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:58:19.326Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-16T17:58:21.129Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions 200
+[debug] [2025-01-16T17:58:21.129Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-16T17:58:21.129Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:21.129Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:21.129Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:21.130Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:21.130Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-16T17:58:21.130Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:58:21.132Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-16T17:58:21.132Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:58:23.128Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-16T17:58:23.128Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-16T17:58:23.129Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-16T17:58:23.129Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-01-16T17:58:23.129Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:23.129Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:23.130Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-01-16T17:58:23.130Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:58:23.938Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-01-16T17:58:23.938Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-01-16T17:58:33.945Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:33.945Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T17:58:33.945Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-16T17:58:33.945Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T17:58:36.068Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-16T17:58:36.068Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 0.9.12
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] Start the Genkit developer experience by running:
+[info] 
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-01-16T18:12:24.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-16T18:12:24.487Z] > authorizing via signed-in user (tanatswatavengwa@gmail.com)
+[debug] [2025-01-16T18:12:24.487Z] [iam] checking project producto-9c357 for permissions ["firebase.projects.get"]
+[debug] [2025-01-16T18:12:24.487Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:12:24.487Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:12:24.487Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions [none]
+[debug] [2025-01-16T18:12:24.487Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T18:12:24.487Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-16T18:12:27.598Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions 200
+[debug] [2025-01-16T18:12:27.598Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/producto-9c357:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-01-16T18:12:27.598Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:12:27.598Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:12:27.599Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:12:27.599Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:12:27.599Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-16T18:12:27.599Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T18:12:27.601Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-16T18:12:27.601Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/producto-9c357
+[debug] [2025-01-16T18:12:29.851Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-16T18:12:29.852Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-16T18:12:29.861Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-16T18:12:29.861Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/producto-9c357/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote productocodebase/package.json 
+[info] +  Wrote productocodebase/.eslintrc.js 
+[info] +  Wrote productocodebase/index.js 
+[info] +  Wrote productocodebase/.gitignore 
+[info] 
+[error] NPM install failed, continuing with Firebase initialization...
+[info] 
+=== Apphosting Setup
+[debug] [2025-01-16T18:22:24.695Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:22:24.695Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:22:24.695Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/producto-9c357/billingInfo [none]
+[debug] [2025-01-16T18:22:26.175Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/producto-9c357/billingInfo 200
+[debug] [2025-01-16T18:22:26.176Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/producto-9c357/billingInfo {"name":"projects/producto-9c357/billingInfo","projectId":"producto-9c357","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-01-16T18:22:26.183Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:22:26.183Z] Checked if tokens are valid: true, expires at: 1737053396016
+[debug] [2025-01-16T18:22:26.183Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/producto-9c357 [none]
+[debug] [2025-01-16T18:22:28.409Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/producto-9c357 200
+[debug] [2025-01-16T18:22:28.409Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/producto-9c357 {"projectId":"producto-9c357","projectNumber":"575480263709","displayName":"Producto","name":"projects/producto-9c357","resources":{"hostingSite":"producto-9c357"},"state":"ACTIVE","etag":"1_6f7367cc-f901-47d3-ad88-199a09defcd0"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2025-01-16T18:23:33.504Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-01-16T18:23:34.196Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-01-16T18:23:34.196Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.2.0","browserURL":"https://www.gstatic.com/firebasejs/11.2.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.2.0/firebase.tgz"},"live":{"version":"11.2","browserURL":"https://www.gstatic.com/firebasejs/live/11.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.2.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.2.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.2.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.2.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.2.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.2.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.2.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.2.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.2.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.2.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.2.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.2.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup
+[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
+[debug] [2025-01-16T18:24:18.230Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
+[info] 
+=== Remoteconfig Setup
+[debug] [2025-01-16T18:24:19.022Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
+[debug] [2025-01-16T18:24:19.022Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
+[debug] [2025-01-16T18:26:31.368Z] Data is 3615311
+[debug] [2025-01-16T18:26:31.368Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.368Z] [unzip] Processing entry: client\
+[debug] [2025-01-16T18:26:31.368Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\
+[debug] [2025-01-16T18:26:31.369Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-01-16T18:26:31.369Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2025-01-16T18:26:31.369Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.370Z] [unzip] Writing file: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\favicon-16x16.png
+[debug] [2025-01-16T18:26:31.371Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-01-16T18:26:31.371Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2025-01-16T18:26:31.371Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.371Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\safari-pinned-tab.svg
+[debug] [2025-01-16T18:26:31.381Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-01-16T18:26:31.381Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2025-01-16T18:26:31.381Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.382Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\favicon.ico
+[debug] [2025-01-16T18:26:31.384Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-01-16T18:26:31.384Z] [unzip] Processing entry: client\index.html
+[debug] [2025-01-16T18:26:31.384Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.385Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\index.html
+[debug] [2025-01-16T18:26:31.387Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-01-16T18:26:31.387Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2025-01-16T18:26:31.387Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.388Z] [unzip] Writing file: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-192x192.png
+[debug] [2025-01-16T18:26:31.389Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-01-16T18:26:31.389Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2025-01-16T18:26:31.389Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.390Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\apple-touch-icon.png
+[debug] [2025-01-16T18:26:31.392Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-01-16T18:26:31.392Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2025-01-16T18:26:31.392Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.392Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-512x512.png
+[debug] [2025-01-16T18:26:31.394Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-01-16T18:26:31.394Z] [unzip] Processing entry: client\manifest.json
+[debug] [2025-01-16T18:26:31.395Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.396Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\manifest.json
+[debug] [2025-01-16T18:26:31.398Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-01-16T18:26:31.398Z] [unzip] Processing entry: client\robots.txt
+[debug] [2025-01-16T18:26:31.398Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.398Z] [unzip] Writing file: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\robots.txt
+[debug] [2025-01-16T18:26:31.399Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-01-16T18:26:31.399Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2025-01-16T18:26:31.399Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.403Z] [unzip] Writing file: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\mstile-150x150.png
+[debug] [2025-01-16T18:26:31.404Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.404Z] [unzip] Processing entry: client\assets\
+[debug] [2025-01-16T18:26:31.404Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\
+[debug] [2025-01-16T18:26:31.405Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
+[debug] [2025-01-16T18:26:31.405Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js.map
+[debug] [2025-01-16T18:26:31.405Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2025-01-16T18:26:31.406Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js.map
+[debug] [2025-01-16T18:26:31.480Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
+[debug] [2025-01-16T18:26:31.480Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js
+[debug] [2025-01-16T18:26:31.480Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2025-01-16T18:26:31.481Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js
+[debug] [2025-01-16T18:26:31.497Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-01-16T18:26:31.497Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2025-01-16T18:26:31.497Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2025-01-16T18:26:31.498Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-BdgySamB.css
+[debug] [2025-01-16T18:26:31.503Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.503Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2025-01-16T18:26:31.503Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\
+[debug] [2025-01-16T18:26:31.503Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-01-16T18:26:31.503Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2025-01-16T18:26:31.503Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions
+[debug] [2025-01-16T18:26:31.504Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\default-extension.png
+[debug] [2025-01-16T18:26:31.505Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.505Z] [unzip] Processing entry: client\assets\img\
+[debug] [2025-01-16T18:26:31.505Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\
+[debug] [2025-01-16T18:26:31.505Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-01-16T18:26:31.505Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2025-01-16T18:26:31.506Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\img
+[debug] [2025-01-16T18:26:31.506Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\database.png
+[debug] [2025-01-16T18:26:31.508Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.508Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2025-01-16T18:26:31.508Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\
+[debug] [2025-01-16T18:26:31.509Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-01-16T18:26:31.509Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-01-16T18:26:31.509Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.509Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-01-16T18:26:31.511Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-01-16T18:26:31.511Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-01-16T18:26:31.511Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.511Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-01-16T18:26:31.512Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-01-16T18:26:31.512Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-01-16T18:26:31.512Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.512Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-01-16T18:26:31.513Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-01-16T18:26:31.513Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-01-16T18:26:31.514Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.514Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-01-16T18:26:31.515Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-01-16T18:26:31.515Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-01-16T18:26:31.515Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.516Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-01-16T18:26:31.517Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-01-16T18:26:31.517Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-01-16T18:26:31.517Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.517Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-01-16T18:26:31.518Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-01-16T18:26:31.518Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-01-16T18:26:31.518Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.519Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-01-16T18:26:31.520Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-01-16T18:26:31.520Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-01-16T18:26:31.520Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.520Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-01-16T18:26:31.521Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-01-16T18:26:31.522Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-01-16T18:26:31.522Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.522Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-01-16T18:26:31.523Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-01-16T18:26:31.523Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-01-16T18:26:31.524Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.524Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-01-16T18:26:31.525Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-01-16T18:26:31.525Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-01-16T18:26:31.526Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.526Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-01-16T18:26:31.527Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-01-16T18:26:31.528Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-01-16T18:26:31.528Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.529Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-01-16T18:26:31.530Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-01-16T18:26:31.531Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-01-16T18:26:31.531Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-01-16T18:26:31.531Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-01-16T18:26:31.532Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-01-16T18:26:31.532Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2025-01-16T18:26:31.532Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.532Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\browserconfig.xml
+[debug] [2025-01-16T18:26:31.533Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-01-16T18:26:31.533Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2025-01-16T18:26:31.533Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-01-16T18:26:31.534Z] [unzip] Writing file: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\client\favicon-32x32.png
+[debug] [2025-01-16T18:26:31.534Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.535Z] [unzip] Processing entry: server\
+[debug] [2025-01-16T18:26:31.535Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\
+[debug] [2025-01-16T18:26:31.535Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
+[debug] [2025-01-16T18:26:31.535Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2025-01-16T18:26:31.535Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2025-01-16T18:26:31.535Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs.map
+[debug] [2025-01-16T18:26:31.546Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
+[debug] [2025-01-16T18:26:31.546Z] [unzip] Processing entry: server\server.mjs
+[debug] [2025-01-16T18:26:31.546Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2025-01-16T18:26:31.546Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs
+[debug] [2025-01-16T18:26:31.557Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-01-16T18:26:31.557Z] [unzip] Processing entry: server\assets\
+[debug] [2025-01-16T18:26:31.557Z] [unzip] mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\assets\
+[debug] [2025-01-16T18:26:31.557Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2025-01-16T18:26:31.558Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2025-01-16T18:26:31.558Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2025-01-16T18:26:31.558Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2025-01-16T18:26:31.560Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2025-01-16T18:26:31.560Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2025-01-16T18:26:31.560Z] [unzip] else mkdir: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2025-01-16T18:26:31.560Z] [unzip] deflating: C:\Users\tanat\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs
