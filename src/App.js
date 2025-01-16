@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import styled from 'styled-components';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import CreateAccount from './pages/CreateAccount';
+import AddProduct from './pages/AddProduct';
+import ProductListing from './pages/ProductListing';
+
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container>
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/create-account" component={CreateAccount} />
+          <Route path="/add-product" component={AddProduct} />
+          <Route path="/product-listing" component={ProductListing} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </Container>
+    </Router>
   );
 }
 
